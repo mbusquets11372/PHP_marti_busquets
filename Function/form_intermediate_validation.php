@@ -19,7 +19,7 @@ else
 echo "<b>Function 2</b><br>";
 function passwordValidation($pwd1,$pwd2)
 {
-  if (strcmp($pwd1,$pwd2) ==0)
+  if (strcmp($pwd1,$pwd2) !==0)
   return true;
   return false;
 }
