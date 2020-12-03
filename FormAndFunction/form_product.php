@@ -68,6 +68,7 @@ if ($_POST){
 
         echo "<p>$replacedMessage</p>"; //show message to the user
     }
+    
   ?>
 </body>
 </HTML>

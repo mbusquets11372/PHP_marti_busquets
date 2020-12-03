@@ -26,4 +26,5 @@ function nameToCapitalLetters($name){
   //where $transformedString get the value "HELLO WORLD"
     return strtoupper($name);
 }
+
 ?>
