@@ -1,4 +1,5 @@
 <?php
+//visusi corrections - OK
 #----------------------------------DECLARACIONS----------------------------------#
 $euros=$pounds=0;
 $rate=0.89;
