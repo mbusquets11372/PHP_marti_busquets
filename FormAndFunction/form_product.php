@@ -1,4 +1,4 @@
-<?php
+<?php  
 //Variables definition
 $name=$capitalisedName=$price=$discount=$discountQuantity=$finalPrice=$replacedMessage=null;
 
