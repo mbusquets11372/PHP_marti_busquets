@@ -1,4 +1,5 @@
 <?php
+//visusi corrections - OK
 function missatge($argument)
 {
     echo "$argument<br>";
