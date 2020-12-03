@@ -44,7 +44,7 @@
         <br>
         <b>CFGS you are studying</b>
         <br>
-        <select name="cfgs[]" multiple size="2">
+        <select name="cfgs[]">
             <option value="ASIX">ASIX</option>
             <option value="DAW">DAW</option>
         </select>
