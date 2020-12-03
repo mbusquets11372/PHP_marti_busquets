@@ -1,4 +1,5 @@
 <?php
+//visusi corrections - OK
 //Variables definition
 $fullName=$fullNameSplit=$email=$emailValidationMessage=$pwd=$pwdConfirm=$pwdValidationMessage=$encryptedPass=null;
 

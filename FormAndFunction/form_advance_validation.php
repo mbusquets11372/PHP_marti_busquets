@@ -1,5 +1,5 @@
 <?php
-
+//visusi corrections - OK - però llegeix els comentaris a la linia 30-32
 function fullNameSplit($fullName)
 {
   //use explode PHP function
@@ -27,9 +27,9 @@ function pwdValidation($pwd,$pwdConfirm)
   //Use the PHP strcmp function - string comparison: binary level
   //return a boolean variable
   //true if params are binaryly equal and false if not
-    if (strcmp($pwd,$pwdConfirm) !==1)
-    return true;
-    return false;
+    if (strcmp($pwd,$pwdConfirm) !==1) //visusi - la funció strcmp retorna 0 quan els strings a comparar son iguals i
+    return true;                                          // >0 o <0 si son diferents
+    return false;                                         // La comparació per a retornar true hauria de ser  strcmp($pwd,$pwdConfirm) ==0
 }
 
 ?>
