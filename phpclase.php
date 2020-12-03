@@ -1,4 +1,5 @@
 <?php
+//visusi corrections - OK
 $weekdays[0]="Monday";
 $weekdays[1]="Tuesday";
 $weekdays[2]="Wednesday"; 
