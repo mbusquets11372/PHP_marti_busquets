@@ -1,4 +1,5 @@
 <?php
+//visusi  corrections - OK
 //---------------------1-----------------------//
 $nom="Marti Busquets Prohens";
 function fullNameSplit($nom)
