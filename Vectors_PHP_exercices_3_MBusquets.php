@@ -1,7 +1,10 @@
 <?php
+//visusi corrections - KO
+//Les posicions als vectors / matrius multidimensionals son numeros, no cadenes de caracters. Ver comentaris baix.
+//Les posicions als vectors / matrius comencen en 0, sino emprem aquesta posició es un espai de memoria que s'esta desperdiciant.
 //1er vector
 echo "<strong>1 Vector: window time of a day</strong><br>";
-$vecto1["1"]="Morning";
+$vecto1["1"]="Morning";//visusi - canviar a $vecto1[0]="Morning";
 $vecto1["2"]="Noon";
 $vecto1["3"]="Afternoon";
 $vecto1["4"]="Evening";
@@ -17,7 +20,7 @@ foreach ($vecto1 as $value1) {
 
 //2n vector
 echo "<br><strong>2 Vector: Dishes of a restaurant</strong><br>";
-$vecto2["1"]="Beef with mushroom sauce";
+$vecto2["1"]="Beef with mushroom sauce";//visusi canviar segons els comentaris de la linia 7
 $vecto2["2"]="Spaghetti carbonara";
 $vecto2["3"]="Spanish omelette";
 
@@ -31,8 +34,10 @@ foreach ($vecto2 as $value2) {
 
 //3er vector
 echo "<br><strong>3 Vector: Times when an alarm sounds</strong><br>";
-$vector3[]=array("8", "12", "14", "16", "20");
-
+$vector3[]=array("8", "12", "14", "16", "20");//visusi - si aquest fora el multidimensional, seria millor posar cada element en una posicio diferent
+                                                                    //visusi - exemple - $vector3[]=8; $vector3[]=12; $vector3[]=14; ; $vector3[]=16; $vector3[]=20;
+                                                                    //visusi - si emprem instrucció array("8", "12", "14", "16", "20")   no caldria posar els corchetes a $vector3[]
+                                                                    // visusi - ho comente a classe per a tots
 foreach ($vector3 as $value_3) {
   foreach ($value_3 as $value_4) {
   echo "$value_4 <br>";}
