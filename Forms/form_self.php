@@ -1,4 +1,6 @@
 <?php
+//visusi corrections - OK 
+//comments: falta el select dels navegadors. No cal afegir-lo. Coneixements ja assolits
 // He posat error_reporting (0); per ocultar els errors quan entres per primer pic i no hi ha informació dins ses variables
       error_reporting (0);
       $nom="$_GET[nom] <br>";
