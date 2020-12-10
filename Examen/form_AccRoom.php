@@ -1,5 +1,5 @@
 <?php
-//Definició de variable i assignació de valor null
+//Definició de variable i assignació de valor nulll
 $finalPrice=$partialPrice2=$partialPrice=$viewsPrice=$genderPrice=$typePrice=$foodServices=$views=$gender=$type=null;
 
 //Afegeix la inclucció per a incloure el fitxer de calcul de preus
