@@ -1,5 +1,5 @@
 <?php
-  
+//viusi corrections - OK - look moodle rubric
 function messageReplacement($capitalisedName,$finalPrice){
   $message="PRODUCTNAME final price is FINALPRICE €";
   //use the php function str_ireplace that return a string

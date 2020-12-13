@@ -1,4 +1,5 @@
 <?php  
+//viusi corrections - see comments below amd rubric in moodle
 //Variables definition
 $name=$capitalisedName=$price=$discount=$discountQuantity=$finalPrice=$replacedMessage=null;
 
@@ -19,6 +20,7 @@ if ($_POST){
 
   //discountQuantity
   //if $discount and $price have been initialised and are not null
+       //visusi corrections: Falta isset
   if(($discount)&&($price)){
     $finalPrice=discountCalculation($discount,$price);
   }
@@ -56,6 +58,8 @@ if ($_POST){
        </select>
        <!--final price-->
           <br><br> <b>Final Price:</b><br><br>
+          <!--visusi corrections - you already have calculated it above in line 25
+          so you could write just value="<?php echo $finalPrice;?>"-->
        <input type="text" name="finalPrice" value="<?php echo discountCalculation($discount,$price)?>">
       <br><br>
       <INPUT TYPE="submit" VALUE="Enviar">
