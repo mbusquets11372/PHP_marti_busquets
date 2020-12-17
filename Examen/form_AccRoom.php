@@ -1,4 +1,5 @@
 <?php
+//visusi corrections - See corrections between the lines and rubric in moodle
 //Definició de variable i assignació de valor nulll
 $finalPrice=$partialPrice2=$partialPrice=$viewsPrice=$genderPrice=$typePrice=$foodServices=$views=$gender=$type=null;
 
@@ -20,7 +21,7 @@ if ($_GET){
   $views=$_GET['views'];
 
 //emmagatzemar en una variable els serveis de restauració seleccionats
-  foreach ($_GET['foodServices'] as $option2)
+  foreach ($_GET['foodServices'] as $option2) //visusi corrections - Be attentive to solution in class
   $foodServices = $option2;
 
   //Si la variable $type ha sigut inicialitzada i no es null
@@ -48,16 +49,16 @@ if ($_GET){
 
   //si els preus del tipus i el genere de l'habitacio son major de 0
   //sumar-los i assignar el resultat a la variable $partialPrice
-  if (isset($typePrice) && (isset($genderPrice))){
+  if (isset($typePrice) && (isset($genderPrice))){	 //visusi corrections - Be attentive to solution in class
     $partialPrice=$typePrice+$genderPrice;
-  //sino asignar valor 0 a $partialPrice
+  //sino asignar valor 0 a $partialPrice//visusi corrections - falta else
   }
 
   //si els preus de les vistes i els serveis de restauracio diferent de 0
   //sumar-los i assignar el resultat a la variable $partialPrice2
-if (isset($viewsPrice) && (isset($foodServicesPrice))){
+if (isset($viewsPrice) && (isset($foodServicesPrice))){	 //visusi corrections - Be attentive to solution in class
     $partialPrice2=$viewsPrice+$foodServicesPrice;
-  //sino asignar valor 0 a $partialPrice2
+  //sino asignar valor 0 a $partialPrice2//visusi corrections - falta else
   }
 
   //calcul del preu final
